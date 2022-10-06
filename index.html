@@ -1,69 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Zoologico
-        </title>
-        <link rel="stylesheet" href="./css/main.css">
 
-        <style>
+<head>
+    <title>
+        Zoologico
+    </title>
 
-            div.botoes {
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-                background-color: white;
-                height: 25px;
-                border-radius: 10px;
-                width: 13%;
-                display: inline-block;
-                float: left;              
-            }
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
-            div.botoes:hover {
-                background-color: #F99528;
-                
-            }
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        div.botoes {
 
-        </style>
+            background-color: white;
+            height: 25px;
+            border-radius: 10px;
+            width: 13%;
+            display: inline-block;
+            float: left;
+        }
+
+        div.botoes:hover {
+            background-color: #F99528;
+
+        }
+    </style>
 
 
-    </head>
+</head>
+
 <body>
-    
+
 
     <header class="menu-principal">
         <main>
             <div class="logo">
-                     <img src="./img/logoZoo.png " width="150" />
+                <img src="./img/logoZoo.png " width="150" />
             </div>
-       
-       
-        <div class="todosbotoes"> 
-            <div class="botoes" id="q1">
-                Atrações
+
+
+            <div class="todosbotoes">
+                <div class="botoes" id="q1">
+                    <h5>Atrações</h5>
+                </div>
+                <div class="botoes" id="q2">
+                    <h5>Localização</h5>
+                </div>
+                <div class="botoes" id="q3">
+                    <h5>Excurções</h5>
+                </div>
+                <div class="botoes" id="q4">
+                    <h5>Contato</h5>
+                </div>
             </div>
-            <div class="botoes" id="q2">
-                Localização
-            </div>
-            <div class="botoes" id="q3">
-                Excurções
-            </div>
-            <div class="botoes" id="q4">
-               Contato
-            </div>
-        </div>
         </main>
     </header>
 
-    <header class="header-2">
-        <div class="animais">
-        <img src="./img/tigre.png" width="980">
-
-
-
-
+    <div class="slider-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 image-slide" src="./img/tigre.png" alt="Primeiro Slide">
+                    <div class="carousel-caption">
+                        <h1>Tigre</h1>
+                        <h4>TESTETESTETESTETESTE</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/Hipopotamo.png" alt="Segundo Slide">
+                    <div class="carousel-caption">
+                        <h1>Hipopotamo</h1>
+                        <h4>TESTETESTETESTETESTE</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/rapiteis.png" alt="Terceiro Slide">
+                    <div class="carousel-caption">
+                        <h1>rapiteis</h1>
+                        <h4>TESTETESTETESTETESTE</h4>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
         </div>
+    </div>
 
-
-    </header>
 </body>
+
 </html>
