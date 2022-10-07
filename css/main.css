@@ -1,8 +1,15 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #F99528;
+    background-color: #ffffff;
     margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
 }
 
 .menu-principal {
@@ -42,9 +49,9 @@ main {
 }
 
 .slider-container {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    max-height: calc(100vh - 100px);
+    margin-top: 100px;
 }
 
 .image-slide {
@@ -55,11 +62,64 @@ main {
 
 div.carousel-caption {
 
-
-    color: #cc6b04;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow:
-        -1px -1px 0px rgb(0, 0, 0),
-        -1px 1px 0px rgb(0, 0, 0),
-        1px -1px 0px rgb(0, 0, 0),
-        1px 0px 0px rgb(0, 0, 0);
+        -1px -1px 0px rgb(54, 54, 54),
+        -1px 1px 0px rgb(54, 54, 54),
+        1px -1px 0px rgb(54, 54, 54),
+        1px 0px 0px rgb(54, 54, 54);
+}
+
+.atracoes {
+    background-color: #F99528;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 80px;
+
+
+}
+
+div.show {
+    height: 550px;
+    width: 360px;
+
+    border-radius: 20px;
+    border: 5px solid rgb(255, 255, 255)
+}
+
+
+#a1 {
+    background: url(../img/rapiteis.png) no-repeat center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#a2 {
+    background: url(../img/tigre.png) no-repeat center;
+    position: relative;
+    overflow: hidden;
+}
+
+#a3 {
+    background: url(../img/Hipopotamo.png) no-repeat center;
+    position: relative;
+    overflow: hidden;
+}
+
+.coveratracao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.coveratracao:hover {
+    background-color: black;
+    opacity: 0.6;
 }
